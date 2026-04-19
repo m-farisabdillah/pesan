@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan untuk Faris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Kirim pesan untuk <span>"Faris"</span></h1>
+            <p>Berikan masukan, saran, atau sekadar menyapa.</p>
+        </header>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="form-group">
+                <input type="hidden" name="access_key" value="16ac5863-856f-43a4-913f-09cf6f14a8c8">
+                <label for="pesan">Pesan Anda</label>
+                <textarea id="pesan" name="message" placeholder="Tuliskan sesuatu di sini..." required></textarea>
+            </div>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <footer>
+            <p>Terima kasih.</p>
+            <div class="disclaimer">
+                ⚠️ Pesan terkirim secara anonim
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
